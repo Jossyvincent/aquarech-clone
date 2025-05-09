@@ -1,0 +1,175 @@
+/* set default styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling*/
+body,html {
+    font-family: Arial, sans-serif;
+    }
+/* Header styles*/
+.navbar{
+    background-color: #002d5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    height: 40px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.app-button{
+    background-color: #32c2df;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.intro {
+    background-image:url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+.intro-overlay{
+    background-color: rgba(0, 0, 50, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 60px;
+}
+.intro-overlay > h1{
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.intro-overlay > p{
+    font: size 2rem;
+    color: antiquewhite;
+    font-weight: bold;
+    
+}
+.intro-3 > h1 {
+    color: #002b5b;
+    text-align: center;
+}
+/*intro-2 section
+.cta-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #002b5b;
+    color: #002b5b;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+.cta-button:hover {
+        background-color: #002b5b;
+        color: #ffffff;
+} */
+
+/* target-audience section */
+.target-audience {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    
+   
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h3 {
+    color: #002b5b;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }  
+  .card p {
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .card-button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #002b5b;
+    color: #002b5b;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .card-button:hover {
+    background-color: #002b5b;
+    color: #ffffff;
+  }
+  /* intro-2 */
+  .intro-2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  .image-side{
+    flex: 1;
+    background-image: url('../images/farmer.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height:400px;
+  }
+  .text-side{
+    flex: 1;
+    background-color: white;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text-side h2 {
+    font-size: 2.4rem;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
