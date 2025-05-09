@@ -1,24 +1,62 @@
-/* set default styles*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.about-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #fff;
 }
-/* body styling*/
-body,html {
-    font-family: Arial, sans-serif;
-    }
-/* header style */
-.head{
-    background-image: #fff;
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    position: relative;
+
+.about-text{
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
 }
-.head > h1 {
-    font-size: 4rem;
-  color: blue;
+.about-text h1{
+    font-size: 3rem;
+  font-weight: 800;
+  color: #173e7d;
+}
+.about-text .subtitle{
+    color: #b30000;
   font-weight: bold;
-  line-height: 1.2;
+  margin: 10px 0 30px;
+}
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.about-text strong {
+  color: #173e7d;
+}
+.about-image {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.clip-background {
+  width: 100%;
+  height: 150px;
+  background-color: #2cbcd1;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: -4px; /* Slight overlap to avoid white gap */
+  border-top: 4px solid white;
+}
+.about-section2{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
 }
