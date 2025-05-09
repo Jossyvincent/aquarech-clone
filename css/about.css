@@ -1,0 +1,24 @@
+/* set default styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body styling*/
+body,html {
+    font-family: Arial, sans-serif;
+    }
+/* header style */
+.head{
+    background-image: #fff;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+.head > h1 {
+    font-size: 4rem;
+  color: blue;
+  font-weight: bold;
+  line-height: 1.2;
+}

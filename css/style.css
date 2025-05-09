@@ -74,22 +74,6 @@ body,html {
     color: #002b5b;
     text-align: center;
 }
-/*intro-2 section
-.cta-button{
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: 2px solid #002b5b;
-    color: #002b5b;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    }
-.cta-button:hover {
-        background-color: #002b5b;
-        color: #ffffff;
-} */
 
 /* target-audience section */
 .target-audience {
@@ -173,3 +157,24 @@ body,html {
     font-weight: bold;
     margin-bottom: 20px;
   }
+  .text-side p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.7;
+  }
+  .cta-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #002b5b;
+    color: #002b5b;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .cta-button:hover {
+        background-color: #002b5b;
+        color: #ffffff;
+}
