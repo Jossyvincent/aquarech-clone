@@ -83,3 +83,94 @@ h1 {
   font-size: 1rem;
   color: #444;
 }
+/*footer css */
+.footer {
+  background-color: #0b2a4a;
+  color: #ffffff;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1 1 300px;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.footer-left .logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  color: #d3e2f1;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.subscribe-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.subscribe-input {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-input input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.subscribe-input button {
+  background-color: #36c2d8;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-links div h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #d3e2f1;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #36c2d8;
+}
