@@ -16,9 +16,28 @@ body,html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
     padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;/* keeps it above other elements */
 }
-
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #002b5b;
+  list-style: none;
+  padding: 10px 0;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar li {
+  position: relative;
+}
 .logo {
     height: 40px;
 }
