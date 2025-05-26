@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
+  <div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
     <div class="container">
     <div class="left">
       <h2>Enquiries</h2>
