@@ -1,100 +1,54 @@
+/* default styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding-top: 15;
-  background: #fff;
-  color: #222;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dff6fa; /* Light blue */
+  color: #1a1a1a;
+}
+ h1 {
+  font-size: 2.8rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0b2a4a;
+  margin-bottom: 60px;
 }
 
-.container {
+.above{
+    text-align: center;
+}
+article{
+    padding-bottom: 20px;
+}
+
+.blog-post {
   display: flex;
-  flex-wrap: wrap;
-  padding: 40px;
-  padding-top: 15;
-  max-width: 1200px;
-  margin: auto;
-  gap: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.image-content img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.left, .right {
-  flex: 1;
-  min-width: 300px;
-}
 
-.left h2, .right h2 {
-  font-size: 28px;
-  color: #002B5B;
-}
-
-.left p {
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-row {
-  display: flex;
-  gap: 10px;
-}
-
-.form-row input {
-  flex: 1;
-}
-
-input, textarea {
-  padding: 10px;
-  margin-bottom: 16px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  outline: none;
-  font-size: 16px;
-}
-
-textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-.checkbox-row {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 16px;
-  gap: 10px;
-}
-
-.checkbox-row input[type="checkbox"] {
-  margin-top: 5px;
-}
-
-.checkbox-row label {
-  font-size: 14px;
-}
-
-.checkbox-row a {
-  color: #0077b6;
-  text-decoration: underline;
-}
-
-button {
-  background-color: #00A8CC;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-button:hover {
-  background-color: #007da6;
-}
-/* footer css*/
+/* footer css */
 .footer {
   background-color: #0b2a4a;
   color: #ffffff;
@@ -185,4 +139,3 @@ button:hover {
 .footer-links a:hover {
   color: #36c2d8;
 }
-
