@@ -1,59 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.body,html {
-    font-family: Arial, sans-serif;
-    }
-.navbar{
-    background-color: #002d5c;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 15px 40px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;/* keeps it above other elements */
-}
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #002b5b;
-  list-style: none;
-  padding: 10px 0;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-.navbar li {
-  position: relative;
-}
-.logo {
-    height: 40px;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002f63;
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
 }
 
-.app-button{
-    background-color: #32c2df;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #00bcd4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: #003b80;
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown-content li {
+  width: 100%;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-button a {
+  background-color: #28c0dc;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.navbar-button a:hover {
+  background-color: #1ba7c0;
 }
