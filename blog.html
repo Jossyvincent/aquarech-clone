@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <title>blog</title>
     <link rel="stylesheet" href="css/blog.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/navbar.css"/>
 </head>
 <body>
+    <!-- Injecting the navbar -->
+    <div id="navbar-container"></div>
     <main>
         <div class="above">
             <h1>Our Blog</h1>
@@ -33,56 +37,9 @@
         </article>
         
     </main>
-<!-- the footer-->
-<footer> 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-left">
-      <img src="aquarech-logo.png" alt="Aquarech Logo" class="logo" />
-      <p>
-        Our goal drives us to do all in our power to power fish farming for small and medium-sized
-        fish farmers by developing creative and modern fish farming methods using cutting-edge technology
-      </p>
-      <form class="subscribe-form" onsubmit="subscribeEmail(event)">
-        <label for="email">Email *</label>
-        <div class="subscribe-input">
-          <input type="email" id="email" name="email" required placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
-        </div>
-      </form>
-    </div>
-
-    <div class="footer-links">
-      <div>
-        <h4>WHAT WE DO</h4>
-        <ul>
-          <li><a href="#">Farmers</a></li>
-          <li><a href="#">Manufacturers</a></li>
-          <li><a href="#">Buyers</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>COMPANY</h4>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Data Request</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookies Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>OUR PLATFORMS</h4>
-        <ul>
-          <li><a href="#">Farmer app</a></li>
-          <li><a href="#">Trader app</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <p>&copy;2025 Aquarech. All rights reserved</p>
-</footer>
+    <!-- Injected Footer Here -->
+<div id="footer-container"></div>
+<script src="js/include.js"></script>
 
 </body>
 
